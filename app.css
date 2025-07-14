@@ -1,0 +1,28 @@
+body {
+    background-color: #FFBC42;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: magenta;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}*/
+
+.circle img {
+    clip-path: circle();
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
